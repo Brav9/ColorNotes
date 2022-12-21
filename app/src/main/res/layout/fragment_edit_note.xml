@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    tools:context=".ui.EditNoteFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -14,8 +15,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".ui.EditNoteFragment">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -36,10 +36,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="8dp"
-                android:text="Tittle"
-                android:textSize="24sp"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
+                android:text="@string/title"
+                android:textColor="#000000"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/ivNoteDetail"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -53,7 +54,7 @@
                 android:layout_marginEnd="8dp"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
-                android:text="Text Note"
+                android:text="@string/text_note"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +73,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/teal_700"
-        android:text="Сохранить"
+        android:text="@string/save"
         android:textSize="16sp"
         app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
